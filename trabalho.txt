@@ -1,0 +1,63 @@
+🎯 Desafio:
+Você foi contratado por uma equipe de assistência social para desenvolver um sistema web que auxilie no cadastro e controle de atendimentos psicossociais realizados por psicólogos, assistentes sociais e pedagogos de um centro comunitário.
+
+Este sistema deve ser comentado, modularizado, usar paradigmas modernos de programação (funcional e orientada a objetos), ter interface no navegador com AJAX, backend com Express + banco de dados PostgreSQL, e organização com NPM/Webpack.
+
+📘 Funcionalidades mínimas exigidas:
+🔸 Frontend (Navegador):
+1.Página com formulário para cadastro de atendimento, contendo:
+
+- Nome do atendido
+
+- Profissional responsável
+
+- Data
+
+- Tipo de atendimento (Psicológico / Pedagógico / Assistência Social)
+
+- Observações
+
+2.Exibição dinâmica da lista de atendimentos usando AJAX
+
+3.Ações de editar e excluir registros via interface
+
+🔸 Backend (Express):
+API REST com rotas:
+
+GET /atendimentos
+
+GET /atendimento/:id
+
+POST /atendimento
+
+PUT /atendimento/:id
+
+DELETE /atendimento/:id
+
+Estrutura organizada com:
+
+Separação de arquivos em módulos (rotas, controllers, serviços, banco)
+
+Uso do express.Router() e middlewares
+
+Aplicação de conceitos de orientação a objetos e funções puras onde aplicável
+
+🔸 Banco de Dados (PostgreSQL):
+Tabela: atendimento
+
+id SERIAL PRIMARY KEY,
+nome TEXT,
+profissional TEXT,
+data DATE,
+tipo TEXT,
+observacoes TEXT
+🔸 Padrões:
+O código deve aplicar:
+
+Funções puras e imutabilidade sempre que possível (programação funcional)
+
+Encapsulamento e uso de classes no backend (orientação a objetos)
+
+Utilização de NPM para gerenciar dependências
+
+Configuração mínima do Webpack para empacotar o frontend
